@@ -1,0 +1,24 @@
+.wd-post-more {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.wd-img {
+    border: 1px solid rgb(110, 118, 125);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.wd-img img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgb(110, 118, 125);
+}
+.wd-avatar {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+.wd-icons > span {
+    flex: 1;
+}

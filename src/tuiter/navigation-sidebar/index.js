@@ -38,10 +38,10 @@ const NavigationSidebar = () => {
                     ${active === 'lists'?'active':''}`}>
                 <i className="bi bi-card-list"></i><span className="d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline">Lists</span>
             </a>
-            <a className={`list-group-item
+            <Link to={'/tuiter/profile'} className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
                 <i className="bi bi-person"></i><span className="d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline">Profile</span>
-            </a>
+            </Link>
             <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
                 <i className="bi bi-three-dots"></i><span className="d-none d-sm-none d-md-none d-lg-none d-xl-inline d-xxl-inline">More</span>

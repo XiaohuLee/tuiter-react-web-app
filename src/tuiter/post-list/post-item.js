@@ -14,6 +14,14 @@ const hasTextUrl = (post) => {
     return "";
 }
 
+const liked = (post) => {
+    if(post.liked) {
+        return <span><i className="fa fa-heart text-danger"></i></span>;
+    } else {
+        return <span><i className="fa fa-heart"></i></span>;
+    }
+}
+
 const PostItem = (
     {
         post = {
@@ -31,7 +39,8 @@ const PostItem = (
             "textUrl": "netflix.com",
             "comments": "4.2K",
             "retuits": "3.5K",
-            "likes": "37.5K"
+            "likes": "37.5K",
+            "liked": true
         }
     }
 ) => {
@@ -74,7 +83,7 @@ const PostItem = (
             <span className="ps-2">{post.retuits}</span>
         </div>
         <div className="col-3">
-            <span><i className="fa fa-heart"></i></span>
+            {liked(post)}
             <span className="ps-2">{post.likes}</span>
         </div>
         <div className="col-3">
